@@ -1,6 +1,6 @@
 import './index.css'
 
-const components = ['profile-john']
+const components = ['text-input']
 
 const componentsLinks = components
 	.map(

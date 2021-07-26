@@ -39,7 +39,6 @@ const generateEntries = pageArray => {
 const generateHtmlPlugin = page => {
 	// Factory pattern
 	return new HtmlWebpackPlugin({
-		title: page,
 		filename: `${page.toLowerCase()}/index.html`,
 		template: `./src/pages/${page.toLowerCase()}/index.html`,
 		inject: true,
