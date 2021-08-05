@@ -1,11 +1,11 @@
-import './index.css'
+import './style.css'
 
-const components = ['text-input']
+const pages = ['text-input', 'hide-scrollbars']
 
-const componentsLinks = components
+const pagesLinks = pages
 	.map(
-		components =>
-			`<li><a class="list__item" target="_blank" href="${components}/index.html">${components}</a></li>`
+		page =>
+			`<li><a class="list__item" target="_blank" href="${page}/index.html">${page}</a></li>`
 	)
 	.join('')
 
@@ -13,5 +13,5 @@ document
 	.querySelector('#root')
 	.insertAdjacentHTML(
 		'beforeend',
-		`<ul class="list list--green">${componentsLinks}</ul>`
+		`<ul class="list list--green">${pagesLinks}</ul>`
 	)

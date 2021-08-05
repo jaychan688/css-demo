@@ -1,0 +1,19 @@
+.aside {
+  width: 80px;
+}
+
+.body {
+  padding-left: 80px;
+}
+
+.no-scroll {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+
+  /* Firefox */
+  &::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+  }
+}
